@@ -7,7 +7,7 @@ TRUNCATE TABLE `escolas_rj`;
 TRUNCATE TABLE `escolas_sp`;
 TRUNCATE TABLE `cidades`;
 
-INSERT INTO EscolasDeSamba.grupos (nome_grupo) VALUES
+INSERT INTO EscolasDeSamba.grupos (grupo) VALUES
 	('Grupo Especial'),
     ('Série Ouro'),
     ('Grupo de Acesso 1');

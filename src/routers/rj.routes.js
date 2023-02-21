@@ -1,8 +1,8 @@
-// const express = require('express');
-// const { rjController } = require('./controllers');
+const express = require('express');
+const { rjController } = require('../controllers');
 
-// const rjRouter = express.Router();
+const rjRouter = express.Router();
 
-// rjRouter.get('/', rjController.allSchools);
+rjRouter.get('/', rjController.listAllSchoolsRj);
 
-// module.exports = rjRouter;
+module.exports = rjRouter;

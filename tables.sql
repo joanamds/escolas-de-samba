@@ -6,7 +6,7 @@ USE EscolasDeSamba;
 
 CREATE TABLE grupos (
 	id INT NOT NULL AUTO_INCREMENT,
-    nome_grupo VARCHAR(30) NOT NULL, 
+    grupo VARCHAR(30) NOT NULL, 
     PRIMARY KEY(id)
 ) ENGINE=INNODB;
 
