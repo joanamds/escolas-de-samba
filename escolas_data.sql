@@ -51,7 +51,7 @@ INSERT INTO EscolasDeSamba.escolas_rj (grupo_id, nome_escola, fundacao, cidade_i
     (2, 'Império da Tijuca', '1940', 1),
     (2, 'Inocentes de Belford Roxo', '1993', 8);
 
-INSERT INTO EscolasDeSamba.escolas_sp (grupo_id, nome_escola, fundacao) VALUES
+INSERT INTO EscolasDeSamba.escolas_sp (grupo_id, nome_escola, fundacao, cidade_id) VALUES
 (1, 'Independente Tricolor', '1987', 2),
 (1, 'Acadêmicos do Tatuapé', '1952', 2),
 (1, 'Barroca Zona Sul', '1974', 2),
