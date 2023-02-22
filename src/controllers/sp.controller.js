@@ -14,7 +14,15 @@ const getSchoolByIdSp = async (req, res) => {
   return res.status(200).json(camelize(message));
 }
 
+const searchSchoolsSp = async (req, res) => {
+  const { q } = req.query;
+  const { type, message } = await spService.getBySearchSp(q);
+  if (type) return res.status(404).json(message);
+  return res.status(200).json(camelize(message));
+}
+
 module.exports = {
   listAllSchoolsSp,
   getSchoolByIdSp,
+  searchSchoolsSp,
 }
