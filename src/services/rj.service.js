@@ -12,9 +12,9 @@ const getByIdRj = async (id) => {
 }
 
 const getBySearchRj = async (search) => {
-  const result = await rjModel.findBySearchRj(search);
-  if (result.length === 0) return { type: 'SCHOOL_NOT_FOUND', message: 'Escola de Samba não encontrada' };
-  return { type: null, message: result };
+  const schools = await rjModel.findBySearchRj(search);
+  if (schools.length === 0) return { type: 'SCHOOL_NOT_FOUND', message: 'Escola de Samba não encontrada' };
+  return { type: null, message: { results: schools.length, schools } };
 }
 
 module.exports = {

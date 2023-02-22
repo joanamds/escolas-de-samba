@@ -12,9 +12,9 @@ const getByIdSp = async (id) => {
 }
 
 const getBySearchSp = async (search) => {
-  const result = await spModel.findBySearchSp(search);
-  if (result.length === 0) return { type: 'SCHOOL_NOT_FOUND', message: 'Escola de Samba não encontrada' };
-  return { type: null, message: result };
+  const schools = await spModel.findBySearchSp(search);
+  if (schools.length === 0) return { type: 'SCHOOL_NOT_FOUND', message: 'Escola de Samba não encontrada' };
+  return { type: null, message: { results: schools.length, schools } };
 }
 
 module.exports = {

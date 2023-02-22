@@ -6,9 +6,9 @@ const getAllSchools = async () => {
 };
 
 const getSchoolBySearch = async(search) => {
-  const result = await escolasModel.searchAll(search);
-  if(result.length === 0) return { type: 'SCHOOL_NOT_FOUND', message: 'Escola não encontrada'}
-  return {type: null, message: result}
+  const schools = await escolasModel.searchAll(search);
+  if(schools.length === 0) return { type: 'SCHOOL_NOT_FOUND', message: 'Escola não encontrada'}
+  return { type: null, message: { results: schools.length, schools } };
 }
 
 module.exports = {
