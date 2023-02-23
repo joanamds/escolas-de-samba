@@ -67,7 +67,7 @@ npm install
 ``` 
 
 * Renomeie o arquivo '.env.example' para '.env'
-
+* Para rodar a aplicação é preciso que o banco de dados (MySQL) esteja funcionando
 * Execute a aplicação com 
 ```bash
 npm start
