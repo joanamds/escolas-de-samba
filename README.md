@@ -67,7 +67,6 @@ npm install
 ``` 
 
 * Renomeie o arquivo '.env.example' para '.env'
-* Para rodar a aplicação é preciso que o banco de dados (MySQL) esteja funcionando
 * Execute a aplicação com 
 ```bash
 npm start
@@ -77,16 +76,4 @@ Ou:
 
 ```bash
 npm run debug
-```
-
-> Testes
-
-* Rode o comando:
-```bash
-npm test
-``` 
-
-* Para rodar os testes unitários:
-```bash
-npm run test:mocha
 ```
