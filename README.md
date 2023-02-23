@@ -1,4 +1,4 @@
-# :partying_face: Escolas de Samba
+# :partying_face: Escolas de Samba :confetti_ball:
 
 O Carnaval já acabou no ano de 2023 mas que tal ver os nomes e informações das escolas de samba do Rio de Janeiro (Grupo Especial e Série Ouro) e também 
 das escolas de samba de São Paulo(Grupo Especial e Grupo de Acesso 1)? 
