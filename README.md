@@ -67,6 +67,7 @@ npm install
 ``` 
 
 * Renomeie o arquivo '.env.example' para '.env'
+* Certifique-se que o MySQL está rodando com as configurações necessárias do arquivo '.env'
 * Execute a aplicação com 
 ```bash
 npm start
