@@ -33,7 +33,7 @@ docker-compose up -d
 
 * Em seguida abra o terminal interativo do container: 
 ```bash
-docker exec -it talker_manager bash
+docker exec -it escolas_de_samba bash
 ``` 
 
 * Instale as dependências dentro do container: 
@@ -46,17 +46,6 @@ npm install
 * Rode o seguinte comando dentro do container: 
 ```bash
 npm run debug
-```
-
-> Testes
-
-* Dentro do terminal do container:
-```bash
-npm test
-``` 
-* Para rodar os testes unitários: 
-```bash
-npm run test:mocha
 ```
 
 ### Sem Docker
