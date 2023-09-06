@@ -18,13 +18,28 @@ Aqui está uma API que junta as informações de todas essas escolas incluindo: 
 <img src="https://user-images.githubusercontent.com/106452876/220921797-debafa23-149e-4029-b757-3f4e38d85b67.gif" alt="gif carnaval" width="300"/>
 </div>
 
-## Tecnologias usadas
-Back-end:
-> Desenvolvido usando: Docker, docker-compose, SQL, Node.js, Mocha
+<details>
+  <summary> <strong> 🔽 Instalando as dependências </strong></summary>
+  
+- Clone o projeto
 
-## Instalando Dependências
-### Com Docker
-> Backend
+```bash
+  git clone git@github.com:joanamds/escolas-de-samba.git
+```
+
+- Entre no diretório do projeto
+
+```bash
+  cd escolas-de-samba
+```
+
+- Instale as dependências
+
+```bash
+  npm install
+```
+
+### 🐳 Com Docker
 
 * Primeiro instale os containers: 
 ```bash
@@ -40,20 +55,24 @@ docker exec -it escolas_de_samba bash
 ```bash
 npm install
 ``` 
+</details>
 
-> Para rodar a API 
+<details>
+  <summary> <strong> 🚀 Para rodar a API </strong></summary>
+  
+### 🐳 Com Docker
+* Entre no terminal interativo do container: 
+  
+```bash
+docker exec -it escolas_de_samba bash
+```
 
 * Rode o seguinte comando dentro do container: 
 ```bash
 npm run debug
 ```
-
-### Sem Docker
-
-* Instale as dependências [Caso existam]
-```bash
-npm install
-``` 
+  
+### 🏃 Sem Docker
 
 * Renomeie o arquivo '.env.example' para '.env'
 * Certifique-se que o MySQL está rodando com as configurações necessárias do arquivo '.env'
@@ -67,6 +86,12 @@ Ou:
 ```bash
 npm run debug
 ```
+</details>
+
+## Tecnologias usadas
+Back-end:
+> Desenvolvido usando: Docker, docker-compose, SQL, Node.js, Mocha
+
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://joanamds.github.io/#/)
